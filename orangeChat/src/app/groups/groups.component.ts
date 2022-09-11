@@ -21,6 +21,11 @@ export class GroupsComponent implements OnInit {
   constructor() { }
 
   ngOnInit(): void {
+    sessionStorage.setItem("username", this.username);
+    sessionStorage.setItem('name', this.name);
+    sessionStorage.setItem('email', this.email);
+    sessionStorage.setItem('usertype', this.usertype);
+
   }
 
 }
